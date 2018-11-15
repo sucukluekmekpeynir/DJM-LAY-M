@@ -71,17 +71,17 @@ client.on('message', async msg => {
 		const voiceChannel = msg.member.voiceChannel;
 		if (!voiceChannel) return msg.channel.sendEmbed(new Discord.RichEmbed()
       .setColor('RANDOM')
-    .setDescription(' <:| İlk olarak sesli bir kanala giriş yapmanız gerek.'));
+    .setDescription(' :x: | İlk olarak sesli bir kanala giriş yapmanız gerek.'));
 		const permissions = voiceChannel.permissionsFor(msg.client.user);
 		if (!permissions.has('CONNECT')) {
 			return msg.channel.sendEmbed(new Discord.RichEmbed()
     .setColor('RANDOM')
-    .setTitle(' <:x:474973245477486612> | İlk olarak sesli bir kanala giriş yapmanız gerek.'));
+    .setTitle(' :x: | İlk olarak sesli bir kanala giriş yapmanız gerek.'));
 		}
 		if (!permissions.has('SPEAK')) {
 			 return msg.channel.sendEmbed(new Discord.RichEmbed()
       .setColor('RANDOM')
-      .setTitle(' <:x:474973245477486612> | Şarkı başlatılamıyor. Lütfen mikrofonumu açınız.'));
+      .setTitle(' :mute: | Şarkı başlatılamıyor. Lütfen mikrofonumu açınız.'));
         }
 
 		if (url.match(/^https?:\/\/(www.youtube.com|youtube.com)\/playlist(.*)$/)) {
@@ -92,7 +92,7 @@ client.on('message', async msg => {
 				await handleVideo(video2, msg, voiceChannel, true); // eslint-disable-line no-await-in-loop
 			}
 			 return msg.channel.sendEmbed(new Discord.RichEmbed)
-      .setTitle(`**✅ | Oynatma Listesi: **${playlist.title}** Kuyruğa Eklendi!**`)
+      .setTitle(`** :white_check_mark: | Oynatma Listesi: **${playlist.title}** Kuyruğa Eklendi!**`)
 		} else {
 			try {
 				var video = await youtube.getVideo(url);
@@ -100,7 +100,7 @@ client.on('message', async msg => {
 				try {
 					var videos = await youtube.searchVideos(searchString, 10);
 					let index = 0;
-          
+         
 				 msg.channel.sendEmbed(new Discord.RichEmbed()                  
          .setTitle('Kralbot | Şarkı Seçimi')
          .setDescription(`${videos.map(video2 => `**${++index} -** ${video2.title}`).join('\n')}`)
@@ -117,7 +117,7 @@ client.on('message', async msg => {
 						console.error(err);
 						 return msg.channel.sendEmbed(new Discord.RichEmbed()
             .setColor('0x36393E')
-            .setDescription('<:basarisiz:474973245477486612> | **Şarkı Değeri Belirtmediğiniz İçin Seçim İptal Edilmiştir**.'));
+            .setDescription(' :x: | **Şarkı Değeri Belirtmediğiniz İçin Seçim İptal Edilmiştir**.'));
                     }
 					const videoIndex = parseInt(response.first().content);
 					var video = await youtube.getVideoByID(videos[videoIndex - 1].id);
@@ -125,7 +125,7 @@ client.on('message', async msg => {
 					console.error(err);
 					return msg.channel.sendEmbed(new Discord.RichEmbed()
           .setColor('0x36393E')
-          .setDescription('<:basarisiz:474973245477486612> | **Aradaım Fakat Hiç Bir Sonuç Çıkmadı**'));
+          .setDescription(' :x: | **Aradaım Fakat Hiç Bir Sonuç Çıkmadı**'));
                 }
             }
 			return handleVideo(video, msg, voiceChannel);
@@ -134,19 +134,19 @@ client.on('message', async msg => {
 	} else if (command === 'geç') {
 		if (!msg.member.voiceChannel) if (!msg.member.voiceChannel) return msg.channel.sendEmbed(new Discord.RichEmbed()
     .setColor('RANDOM')
-    .setDescription(' <:basarisiz:474973245477486612> | **Lütfen öncelikle sesli bir kanala katılınız**.'));
+    .setDescription(' :speaker: | **Lütfen öncelikle sesli bir kanala katılınız**.'));
 		if (!serverQueue) return msg.channel.sendEmbed(new Discord.RichEmbed()
      .setColor('RANDOM')
-     .setTitle('<:basarisiz:474973245477486612> | **Hiç Bir Müzik Çalmamakta**'));                                              
+     .setTitle(' :x: | **Hiç Bir Müzik Çalmamakta**'));                                              
 		serverQueue.connection.dispatcher.end('**Müziği Geçtim!**');
 		return undefined;
 	} else if (command === 'durdur') {
 		if (!msg.member.voiceChannel) if (!msg.member.voiceChannel) return msg.channel.sendEmbed(new Discord.RichEmbed()
     .setColor('RANDOM')
-    .setDescription('**<:basarisiz:474973245477486612> | Lütfen öncelikle sesli bir kanala katılınız.**'));
+    .setDescription('** :speaker: | Lütfen öncelikle sesli bir kanala katılınız.**'));
 		if (!serverQueue) return msg.channel.sendEmbed(new Discord.RichEmbed()
      .setColor('RANDOM')
-     .setTitle('<:basarisiz:474973245477486612> **| Hiç Bir Müzik Çalmamakta**'));                                              
+     .setTitle(' :speaker: | Hiç Bir Müzik Çalmamakta**'));                                              
 		msg.channel.send(`:stop_button: **${serverQueue.songs[0].title}** Adlı Müzik Durduruldu`);
 		serverQueue.songs = [];
 		serverQueue.connection.dispatcher.end('**Müzik Bitti**');
@@ -154,10 +154,10 @@ client.on('message', async msg => {
 	} else if (command === 'ses') {
 		if (!msg.member.voiceChannel) if (!msg.member.voiceChannel) return msg.channel.sendEmbed(new Discord.RichEmbed()
     .setColor('RANDOM')
-    .setDescription('<:basarisiz:474973245477486612> **| Lütfen öncelikle sesli bir kanala katılınız.**'));
+    .setDescription( ' :speaker: **| Lütfen öncelikle sesli bir kanala katılınız.**'));
 		if (!serverQueue) return msg.channel.sendEmbed(new Discord.RichEmbed()
      .setColor('RANDOM')
-     .setTitle('<:basarisiz:474973245477486612> | **Hiç Bir Müzik Çalmamakta**'));                                              
+     .setTitle(' :x: | **Hiç Bir Müzik Çalmamakta**'));                                              
 		if (!args[1]) return msg.channel.sendEmbed(new Discord.RichEmbed()
    .setTitle(`:loud_sound: Şuanki Ses Seviyesi: **${serverQueue.volume}**`)
     .setColor('RANDOM'))
@@ -168,17 +168,17 @@ client.on('message', async msg => {
     .setColor('RANDOM'));                             
 	} else if (command === 'çalan') {
 		if (!serverQueue) return msg.channel.sendEmbed(new Discord.RichEmbed()
-    .setTitle("<:basarisiz:474973245477486612> | **Çalan Müzik Bulunmamakta**")
+    .setTitle(" :mute: | **Çalan Müzik Bulunmamakta**")
     .setColor('RANDOM'));
 		return msg.channel.sendEmbed(new Discord.RichEmbed()
     .setColor('RANDOM')
-    .setTitle("Retdelta Müzik | Çalan")                            
+    .setTitle("Kralbot | Çalan")                            
     .addField('Başlık', `[${serverQueue.songs[0].title}](${serverQueue.songs[0].url})`, true)
     .addField("Süre", `${serverQueue.songs[0].durationm}:${serverQueue.songs[0].durations}`, true))
 	} else if (command === 'sıra') {
     let index = 0;
 		if (!serverQueue) return msg.channel.sendEmbed(new Discord.RichEmbed()
-    .setTitle("<:basarisiz:474973245477486612> | **Sırada Müzik Bulunmamakta**")
+    .setTitle(" :x: | **Sırada Müzik Bulunmamakta**")
     .setColor('RANDOM'));
 		  return msg.channel.sendEmbed(new Discord.RichEmbed()
     .setColor('RANDOM')
@@ -190,20 +190,20 @@ client.on('message', async msg => {
 			serverQueue.playing = false;
 			serverQueue.connection.dispatcher.pause();
 			return msg.channel.sendEmbed(new Discord.RichEmbed()
-      .setTitle("**:pause_button: Müzik Senin İçin Durduruldu!**")
+      .setTitle(" :pause_button: Müzik Senin İçin Durduruldu!")
       .setColor('RANDOM'));
 		}
-		return msg.channel.send('<:basarisiz:474973245477486612> | **Çalan Müzik Bulunmamakta**');
+		return msg.channel.send(' :mute: | **Çalan Müzik Bulunmamakta**');
 	} else if (command === 'devam') {
 		if (serverQueue && !serverQueue.playing) {
 			serverQueue.playing = true;
 			serverQueue.connection.dispatcher.resume();
 			return msg.channel.sendEmbed(new Discord.RichEmbed()
-      .setTitle("**:arrow_forward: Müzik Senin İçin Devam Etmekte!**")
+      .setTitle(" :arrow_forward: Müzik Senin İçin Devam Etmekte!**")
       .setColor('RANDOM'));
 		}
 		return msg.channel.sendEmbed(new Discord.RichEmbed()
-    .setTitle("**<:basarisiz:474973245477486612> | Çalan Müzik Bulunmamakta.**")
+    .setTitle("** :mute: | Çalan Müzik Bulunmamakta.**")
     .setColor('RANDOM'));
 	}
   
@@ -252,7 +252,7 @@ async function handleVideo(video, msg, voiceChannel, playlist = false) {
 		console.log(serverQueue.songs);
 		if (playlist) return undefined;
 		return msg.channel.sendEmbed(new Discord.RichEmbed()
-    .setTitle(`<:onayland:474982945304608769> **${song.title}** Adlı Müzik Kuyruğa Eklendi!`)
+    .setTitle(` :white_check_mark: **${song.title}** Adlı Müzik Kuyruğa Eklendi!`)
     .setColor('RANDOM'))
 	}
 	return undefined;
@@ -270,7 +270,7 @@ function play(guild, song) {
 
 	const dispatcher = serverQueue.connection.playStream(ytdl(song.url))
 		.on('end', reason => {
-			if (reason === '<:basarisiz:474973245477486612> | **Yayın Akış Hızı Yeterli Değil.**') console.log('Müzik Bitti.');
+			if (reason === ' :speedboat: | **Yayın Akış Hızı Yeterli Değil.**') console.log('Müzik Bitti.');
 			else console.log(reason);
 			serverQueue.songs.shift();
 			play(guild, serverQueue.songs[0]);
@@ -319,8 +319,8 @@ client.unload = command => {
 };
 
 client.on('message', msg => {
-  if (msg.content.toLowerCase() === 'sa') {
-    msg.reply('Aleyküm selam,  hoş geldin ^^');
+  if (msg.content.toLowerCase() === 'link') {
+    msg.reply('https://kralbotdiscord.wordpress.com/');
   }
 });
 
@@ -366,101 +366,72 @@ client.on("guildMemberAdd", member => {
 });
 
 ////////////////////////
-client.on("guildMemberAdd", async member => {
-const kanal = member.guild.channels.find("name", "giriş-çıkış")
-kanal.sendMessage(member + '  ' + member.guild.name + ' adlı sunucuya hoşgeldin! Seni görmek ne güzel.')
-})
 
-client.on('guildCreate', guild => {
-  const owner = guild.owner
-  const mrb = guild.systemChannel
-  if (!mrb) return;
-  let merhaba = new Discord.RichEmbed()
-  .setColor(Math.floor(Math.random() * (0xFFFFFF + 1)))
-  .setAuthor(guild.name, guild.iconURL)
-  .addField('**Kralbot sunucunuza eklendi!**', `${owner}`)
-  .addField('**Kralbot** sunucunuzdaki insanlara kolaylıklar sağlar.', `**${prefix}bilgi** yazmanız yeterlidir!`)
-  .addField('**Botumuzun özelliklerini öğrenmek için**', `**${prefix}yardım** yazmanız yeterlidir!`)
-  .addField('Botumuzu eklemek istiyorsanız', `**${prefix}davet** yazarak ekleyebilirsiniz.`)
-  mrb.send(merhaba);
+client.on("message", async message => {
+    if (message.content.toLowerCase() === prefix + "nsfw") {
+ if(message.channel.nsfw || message.channel.type === 'dm'){
+   let embed = new Discord.RichEmbed()
+   .setTitle('+18 Gözlerini Kapa Bence Sonra Uyurmadı Deme :smile: ')
+   .setColor(0x00AE86)
+   .setImage(("https://cdn.boobbot.us/4k/4k"+ Math.floor(Math.random() * 1460)+".jpg"))
+   message.channel.send(embed)
+}
+ else{
+       message.channel.send({embed: {
+color: Math.floor(Math.random() * (0xFFFFAD + 2)),
+description: ('Bu kanal NSFW kanalı değil.')
+ }})
+ }
+}
+});
+ 
+    client.on('message', async msg => {
+    if (msg.content.toLowerCase() === prefix + "disko") {
+   if (msg.channel.type === "dm") return;
+  const rol = 'Disko' // Rol ismi buraya
+  setInterval(() => {
+      msg.guild.roles.find(s => s.name === rol).setColor("RANDOM")
+      }, 9000);
+  }
 });
 
-client.on('guildCreate', guild => {
+client.on('channelCreate', async channel => {
+
+  console.log(`${channel.name} :warning: Kanalı Oluşturuldu :warning: `);
+
+if (channel.type != 'text') return;
+  let sChannel = channel.guild.channels.find('name', 'log');
+  sChannel.send (`${channel} :warning: _Kanalı Oluşturuldu _ :warning: `);
+
+});
+
+client.on('guildMemberAdd', member => {
+  let guild = member.guild;
+  let joinRole = guild.roles.find('name', 'Üye'); 
+  member.addRole(joinRole); 
+
+  const channel = member.guild.channels.find('name', 'giriş-çıkış');
+  if (!channel) return;
   const embed = new Discord.RichEmbed()
   .setColor('RANDOM')
-  .setTitle('Bir Sunucuya Katıldım;')
-  .setDescription(`Bot, 》${guild.name}《 adlı sunucuya katıldı [${guild.memberCount} Üye]!`)
-  .setFooter('Kralbot', client.user.avatarURL)
+  .setAuthor(member.user.username, member.user.avatarURL)
+  .setThumbnail(member.user.avatarURL)
+  .setTitle(':inbox_tray: | Sunucuya katıldı!')
   .setTimestamp()
-  client.channels.get('461482059802607625').send(embed);
+  channel.sendEmbed(embed); 
 });
 
-client.on('guildDelete', guild => {
+client.on('guildMemberRemove', member => {
+  const channel = member.guild.channels.find('name', 'giriş-çıkış');
+  if (!channel) return;
   const embed = new Discord.RichEmbed()
   .setColor('RANDOM')
-  .setTitle('Bir Sunucudan Ayrıldım;')
-  .setDescription(`Bot, 》${guild.name}《 sunucudan ayrıldı [${guild.memberCount} Üye]!`)
-  .setFooter('Kralbot', client.user.avatarURL)
+  .setAuthor(member.user.username, member.user.avatarURL)
+  .setThumbnail(member.user.avatarURL)
+  .setTitle(':outbox_tray: | Sunucudan ayrıldı')
   .setTimestamp()
-  client.channels.get('461482059802607625').send(embed);
+  channel.sendEmbed(embed); 
 });
-
-client.on("guildMemberAdd", member => {
-
-  if (db.has(`otoR_${member.guild.id}`) === false) return;
-  var rol = member.guild.roles.get(db.fetch(`otoR_${member.guild.id}`));
-  if (!rol) return;
-  
-  member.addRole(rol)
-  
-})
-
-const { Command } = require('discord.js-commando');
-
-module.exports = class BlacklistUserCommand extends Command {
-    constructor(client) {
-        super(client, {
-            name: 'mod-log-ayarla',
-            aliases: ['modlogayarla', 'modlog', 'mod-log'],
-            group: 'ayarlar',
-            memberName: 'mod-log-ayarla',
-            description: 'Mod-log kanalını değiştirmenizi sağlar.',
-            guildOnly: true,
-            throttling: {
-                usages: 1,
-                duration: 10
-            },
-
-            args: [
-                {
-                    key: 'channel',
-                    prompt: 'mod-log kanalı hangi kanal olsun? (#kanalismi şeklinde yazınız)\n',
-                    type: 'channel'
-                }
-            ]
-        });
-    }
-
-    hasPermission(msg) {
-        if(!msg.guild) return this.client.isOwner(msg.author);
-        return this.client.isOwner(msg.author) || msg.member.hasPermission('MANAGE_GUILD');
-    }
-
-    async run(message, args) {
-        var ch = await args.channel;
-        if (ch.type == 'voice') return message.reply('Sesli kanallar seçilemez!');
-            const vt = this.client.provider.get(message.guild.id, 'modLog', []);
-            const db = this.client.provider.get(message.guild.id, 'modLogK', []);
-            if (vt === args.channel.id) {
-                this.client.provider.set(message.guild.id, 'modLogK', true);
-                message.channel.send(`${this.client.emojis.get('464406477851983883')} Mod-log kanalı zaten **${args.channel.name}** olarak ayarlı.`);
-            } else {
-                this.client.provider.set(message.guild.id, 'modLog', args.channel.id);
-                this.client.provider.set(message.guild.id, 'modLogK', true);
-                return message.channel.send(`${this.client.emojis.get('464406478153973770')} Mod-log kanalı **<#${args.channel.id}>** kanalı olarak ayarlandı.`);
-            }
-    }
-};
 
 client.on('message', async msg => {
   if (msg.content.toLowerCase() === 'sa') {
@@ -470,5 +441,31 @@ client.on('message', async msg => {
   }
   });
 
+client.on("message", msg => {
+    const uyarıembed = new Discord.RichEmbed()
+      .setColor(0x00AE86)
+      .setDescription(":crown: " + msg.author + "Reklam Yapmayı Kes Seni Yetkililere Söyledim :angry: :rage: ")
+
+const dmembed = new Discord.RichEmbed()
+    .setTitle("Sunucunda " + msg.author.tag + " reklam yapıyor!")
+      .setColor(0x00AE86)
+      .setDescription(" " + msg.author.tag + " Sunucunda Reklam Yapıyor k?uyar komutu ile kişiyi uyara bilir k?ban Komutu İle Kişiyi Banlayabilirsin ")
+    .addField("Kullanıcının mesajı:", "**" + msg.content + "**")
+
+if (msg.content.toLowerCase().match(/(discord\.gg\/)|(discordapp\.com\/invite\/)/g) && msg.channel.type === "text" && msg.channel.permissionsFor(msg.guild.member(client.user)).has("MANAGE_MESSAGES")) {
+    if(msg.member.hasPermission('BAN_MEMBERS')){
+    return;
+    } else {
+    msg.delete(30).then(deletedMsg => {
+     deletedMsg.channel.send(uyarıembed)
+     msg.guild.owner.send(dmembed).catch(e => {
+            console.error(e);
+          });
+        }).catch(e => {
+          console.error(e);
+        });
+      };
+      };
+    })
 
 client.login(process.env.BOT_TOKEN);
