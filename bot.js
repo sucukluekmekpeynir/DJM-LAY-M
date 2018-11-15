@@ -462,4 +462,13 @@ module.exports = class BlacklistUserCommand extends Command {
     }
 };
 
+client.on('message', async msg => {
+  if (msg.content.toLowerCase() === 'sa') {
+    await msg.react(':as:');
+    msg.react(':hg:');
+    msg.reply('**Aleyküm Selam, Hoşgeldin Kardeşim**:two_hearts:')
+  }
+  });
+
+
 client.login(process.env.BOT_TOKEN);
