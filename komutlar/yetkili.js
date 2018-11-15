@@ -16,6 +16,8 @@ k?sunucular:   ^Botun bulunduğu sunucuları gösterir.^
 k?tavsiye:     ^Bot'a tavsiye yollamanızı sağlar.^
 k?yaz:         ^Bot üzerinden yazı yazmanızı sağlar.^
 k?kilit:       ^Kanalı belirli bir süre kilitlemenizi sağlar.^
+k?mod-log-ayarla: ^mod-log kanalını ayarlarsınız.^
+k?giriş-çıkış-ayarla: ^giriş-çıkış kanalını ayarlarsınız.^
 
 * örn: k?ban <sebep>
 
