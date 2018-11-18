@@ -7,7 +7,7 @@ exports.run = (client, message) => {
     .setColor(0x00AE86)
     .setTimestamp()
     .setAuthor(message.author.username, message.author.avatarURL)
-    .setDescription('Özel mesajlarını kontrol et. :postbox:');
+    .setDescription('Özel mesajlarını kontrol et reis. :postbox:');
     message.channel.sendEmbed(ozelmesajkontrol) }
 	const pingozel = new Discord.RichEmbed()
     .setColor(0x00AE86)
@@ -26,6 +26,6 @@ exports.conf = {
 
 exports.help = {
   name: 'davet',
-  description: 'Botun davet linkini gönderir.',
+  description: 'Botun davet linkini özelden atar.',
   usage: 'davet'
 };
