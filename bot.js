@@ -541,7 +541,7 @@ async run(msg) {
 }
 
 const { command } = require('discord.js-commando');
-const { RichEmbed } = require('discord.js');
+const { richEmbed } = require('discord.js');
 const { stripIndents } = require('common-tags');
 const moment = require('moment')
 const filterLevels = ['Yok.', 'Rolü olmayanlar için.', 'Herkes için.'];
