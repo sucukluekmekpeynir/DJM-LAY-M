@@ -397,7 +397,7 @@ description: ('Bu kanal NSFW kanalı değil.')
 
 client.on('channelCreate', async channel => {
 
-  console.log(`${channel.name} :warning: Kanalı Oluşturuldu :warning: `);
+  console.log(`${channel.name} Kanalı Oluşturuldu`);
 
 if (channel.type != 'text') return;
   let sChannel = channel.guild.channels.find('name', 'log');
@@ -480,7 +480,7 @@ if (msg.content.toLowerCase().match(/(discord\.gg\/)|(discordapp\.com\/invite\/)
 client.on('message', msg => {
 if(msg.content === "sa") {
     const dans = client.emojis.get("513376101112872993");
-   msg.reply("**Aleyküm Selam, Hoşgeldin** ${dans}");
+   msg.reply("**Aleyküm Selam, Hoşgeldin**"`${dans}`);
          }
      }
  );
