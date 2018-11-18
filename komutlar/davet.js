@@ -20,7 +20,7 @@ exports.run = (client, message) => {
 exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: ['botu ekle', 'botu davet et', 'botuekle', 'invite'],
+  aliases: ['botu-ekle', 'botu-davet-et', 'botuekle', 'invite'],
   permLevel: 0
 };
 
