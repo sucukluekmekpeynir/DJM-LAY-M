@@ -480,9 +480,34 @@ if (msg.content.toLowerCase().match(/(discord\.gg\/)|(discordapp\.com\/invite\/)
 client.on('message', msg => {
 if(msg.content === "sa") {
     const dans = client.emojis.get("513376101112872993");
-   msg.reply("**Aleyküm Selam, Hoşgeldin**"`${dans}`);
+   msg.reply('**Aleyküm Selam, Hoşgeldin**${dans}');
          }
      }
  );
+
+client.on('guildCreate', guild => {
+    let channel = client.channels.get("504784478955110408")
+        const embed = new Discord.RichEmbed()
+        .setColor("RANDOM")
+        .setAuthor(`Giriş ${guild.name}`)
+        .setThumbnail(guild.iconURL)
+        .addField("Kurucu", guild.owner)
+        .addField("Sunucu ID", guild.id, true)
+        .addField("Toplam Kullanıcı", guild.memberCount, true)
+        .addField("Toplam Kanal", guild.channels.size, true)
+         channel.send(embed);
+    });
+client.on('guildDelete', guild => {
+    let channel = client.channels.get("504784478955110408")
+        const embed = new Discord.RichEmbed()
+        .setColor("RANDOM")
+        .setAuthor(`Çıkış ${guild.name}`)
+        .setThumbnail(guild.iconURL)
+        .addField("Kurucu", guild.owner)
+        .addField("Sunucu ID", guild.id, true)
+        .addField("Toplam Kullanıcı", guild.memberCount, true)
+        .addField("Toplam Kanal", guild.channels.size, true)
+         channel.send(embed);
+    });
 
 client.login(process.env.BOT_TOKEN);
