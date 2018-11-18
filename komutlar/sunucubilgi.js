@@ -6,7 +6,7 @@ const moment = require('moment')
 const filterLevels = ['Yok.', 'Rolü olmayanlar için.', 'Herkes için.'];
 const verificationLevels = ['Yok.', 'Düşük.', 'Orta.', '(╯°□°）╯︵ ┻━┻', '(╯°□°）╯︵ ┻━┻', '┻━┻ ﾐヽ(ಠ益ಠ)ノ彡┻━┻'];
 
-module.exports = class ServerCommand extends Command {
+module.exports = class ServerCommand extends command {
     constructor(client) {
         super(client, {
 			name: 'sunucubilgi',
