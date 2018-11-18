@@ -486,7 +486,7 @@ if(msg.content === "sa") {
  );
 
 client.on('guildCreate', guild => {
-    let channel = client.channels.get("504784478955110408")
+    let channel = client.channels.get("513746526103928843")
         const embed = new Discord.RichEmbed()
         .setColor("RANDOM")
         .setAuthor(`Giriş ${guild.name}`)
@@ -498,7 +498,7 @@ client.on('guildCreate', guild => {
          channel.send(embed);
     });
 client.on('guildDelete', guild => {
-    let channel = client.channels.get("504784478955110408")
+    let channel = client.channels.get("513746526103928843")
         const embed = new Discord.RichEmbed()
         .setColor("RANDOM")
         .setAuthor(`Çıkış ${guild.name}`)
