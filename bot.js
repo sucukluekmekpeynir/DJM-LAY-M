@@ -479,7 +479,7 @@ if (msg.content.toLowerCase().match(/(discord\.gg\/)|(discordapp\.com\/invite\/)
     });  
 
 const { Command } = require('discord.js-commando');
-const Discord = require('discord.js');
+const discord = require('discord.js');
 
 module.exports = class ScanPlayingCommand extends Command {
     constructor(client) {
