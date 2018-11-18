@@ -28,6 +28,7 @@
     "figlet": "^1.2.1",
     "fs": "0.0.1-security",
     "generate-password": "^1.4.0",
+    "useful-tools": "^0.0.23",
     "google": "^2.1.0",
     "jimp": "^0.5.6",
     "math-expression-evaluator": "^1.2.17",
