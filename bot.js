@@ -540,7 +540,7 @@ async run(msg) {
     }
 }
 
-const { Command } = require('discord.js-commando');
+const { command } = require('discord.js-commando');
 const { RichEmbed } = require('discord.js');
 const { stripIndents } = require('common-tags');
 const moment = require('moment')
