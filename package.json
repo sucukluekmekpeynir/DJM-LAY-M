@@ -26,6 +26,7 @@
     "ffmpeg": "0.0.4",
     "ffmpeg-binaries": "^4.0.0",
     "figlet": "^1.2.1",
+    "quick.db": "7.0.0-b16",
     "fs": "0.0.1-security",
     "generate-password": "^1.4.0",
     "useful-tools": "^0.0.23",
