@@ -2,11 +2,18 @@ const Discord = require('discord.js');
 
 
 exports.run = (client, message, params) => {
-    if(message.author.id === "403882308412637186") {
+    if(message.author.id === "416985816112300034") {
         
-        message.channel.send(':1234: **Dinle ve Eğlen Botu için gerekli şeyler kuruluyor...**');
+        message.channel.send(':1234: **Kur Kralbot için gerekli şeyleri kuruyor...**');
         
         message.guild.createChannel('mod-log');
+        message.guild.createChannel('giriş-çıkış');
+        message.guild.createChannel('ceza-takip-listesi');
+        message.guild.createChannel('log');
+        message.guild.createChannel('uyarı');
+        message.guild.createChannel('duyuru');
+        message.guild.createChannel('Yapımcım Süleyman Yıldız');
+        
         
         message.channel.send(':white_check_mark: **Herşey Kuruldu**');
         
@@ -25,5 +32,5 @@ exports.conf = {
 exports.help = {
   name: 'kur',
   description: 'Bot için gerekli ayarları kurar.',
-  usage: 'dve!kur'
+  usage: 'kur'
 };
