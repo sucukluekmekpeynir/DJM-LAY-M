@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 exports.run = function(client, message, args) {
-    if (message.author.id === "403882308412637186") {
+    if (message.author.id === "416985816112300034") {
     let dmkisi = message.mentions.users.first();
     if (!dmkisi) return message.channel.send(':x: **DM Atacağın Kişiyi Seçmelisin**');
     let dm = args.slice(1).join(' ');
@@ -12,13 +12,13 @@ exports.run = function(client, message, args) {
     .setTitle('Merhaba Sana Birisinden DM Var!')
     .addField('DM Atan :', `➽ <@${message.author.id}>`)
     .addField('DM İse :', `➽ ${dm}`)
-    .setFooter('DM | Dinle ve Eğlen')
+    .setFooter('DM | Kralbot')
     dmkisi.sendEmbed(dmat);
     const dmtamam = new Discord.RichEmbed()
     .setColor('RANDOM')
     .setTimestamp()
     .setTitle('İşlem Tamamlandı :white_check_mark:')
-    .setFooter('DM | Dinle ve Eğlen')
+    .setFooter('DM | Kralbot')
     message.channel.sendEmbed(dmtamam);
     } else {
         message.channel.send(':x: **Bu Komutu Sadece Yapımcım Kullanabilir!**');
@@ -33,7 +33,7 @@ exports.conf = {
 };
 
 exports.help = {
-  name: 'dmatasdf',
+  name: 'dm',
   description: 'Özel komut.',
-  usage: 'dve!banane'
+  usage: 'dm'
 };
