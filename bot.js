@@ -480,7 +480,7 @@ if (msg.content.toLowerCase().match(/(discord\.gg\/)|(discordapp\.com\/invite\/)
 client.on('message', msg => {
 if(msg.content === "sa") {
     const dans = client.emojis.get("513376101112872993");
-   msg.reply('**Aleyküm Selam, Hoşgeldin**${dans}');
+   msg.reply(`**Aleyküm Selam, Hoşgeldin** ${dans}`);
          }
      }
  );
