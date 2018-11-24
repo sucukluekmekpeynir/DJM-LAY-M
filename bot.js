@@ -540,4 +540,14 @@ async run(msg) {
     }
 }
 
+client.on("guildMemberAdd", member => {
+
+  if (db.has(`otoR_${member.guild.id}`) === false) return;
+  var rol = member.guild.roles.get(db.fetch(`otoR_${member.guild.id}`));
+  if (!rol) return;
+  
+  member.addRole(rol)
+  
+})
+
 client.login(process.env.BOT_TOKEN);
