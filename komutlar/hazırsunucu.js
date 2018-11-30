@@ -6,27 +6,27 @@ exports.run = (client, message, params) => {
         
         message.channel.send(':1234: **Sunucu hazırlanıyor...**');
         
-        message.guild.createChannel('sohbet');
+        message.guild.createChannel('【💬】sohbet');
         
-        message.guild.createChannel('bot-komut');
+        message.guild.createChannel('【👨🏼💻】bot-komut');
         
         message.guild.createChannel('giriş-çıkış');
     
         message.guild.createChannel('sayaç');
       
-        message.guild.createChannel('kurallar');
+        message.guild.createChannel('【📜】kurallar');
       
         message.guild.createChannel('duyuru');
       
-        message.guild.createChannel('partner');
+        message.guild.createChannel('【👥】partner');
         
-        message.guild.createChannel('sesli-sohbet-1', 'voice');
+        message.guild.createChannel('Sohbet #1', 'voice');
         
-        message.guild.createChannel('sesli-sohbet-2', 'voice');
+        message.guild.createChannel('Sohbet #2', 'voice');
         
-        message.guild.createChannel('sesli-sohbet-3', 'voice');
+        message.guild.createChannel('Sohbet #3', 'voice');
         
-        message.guild.createChannel('müzik', 'voice');
+        message.guild.createChannel('🌟müzik🌟', 'voice');
         
         message.guild.createChannel('Bot Yapımcısı:Süleyman Yıldız', 'voice');
         
