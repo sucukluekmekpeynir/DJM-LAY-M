@@ -540,7 +540,7 @@ async run(msg) {
     }
 }
 
-const Discord = require('discord.js');
+const discord = require('discord.js');
 const client = new Discord.Client();
 
 function panel1() {
