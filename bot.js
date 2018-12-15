@@ -540,9 +540,6 @@ async run(msg) {
     }
 }
 
-const Discord = require('discord.js');
-const client = new Discord.Client();
-
 function panel1() {
     return new Promise(resolve => {
         setTimeout(() => {
