@@ -540,10 +540,12 @@ async run(msg) {
     }
 }
 
+}
+
 function panel1() {
     return new Promise(resolve => {
         setTimeout(() => {
-            client.channels.get(`512743678477991946`).setName(`⚫️⚫️⚫️⚫️⚫️⚫️⚫️⚫️`);
+            client.channels.get(`524228769037287434`).setName(`⚫️⚫️⚫️⚫️⚫️⚫️⚫️⚫️`);
             panel2();
         }, 1000);
       });
@@ -552,7 +554,7 @@ function panel1() {
   function panel2() {
     return new Promise(resolve => {
         setTimeout(() => {
-            client.channels.get(`512743678477991946`).setName(`🔵⚫️⚫️⚫️⚫️⚫️⚫️⚫️`);
+            client.channels.get(`524228769037287434`).setName(`🔵⚫️⚫️⚫️⚫️⚫️⚫️⚫️`);
             panel3();
         }, 1000);
       });
@@ -560,7 +562,7 @@ function panel1() {
   function panel3() {
     return new Promise(resolve => {
         setTimeout(() => {
-            client.channels.get(`512743678477991946`).setName(`🔵🔵⚫️⚫️⚫️⚫️⚫️⚫️`);
+            client.channels.get(`524228769037287434`).setName(`🔵🔵⚫️⚫️⚫️⚫️⚫️⚫️`);
             panel4();
         }, 1000);
       });
@@ -568,7 +570,7 @@ function panel1() {
   function panel4() {
     return new Promise(resolve => {
         setTimeout(() => {
-            client.channels.get(`512743678477991946`).setName(`🔵🔵🔵⚫️⚫️⚫️⚫️⚫️`);
+            client.channels.get(`524228769037287434`).setName(`🔵🔵🔵⚫️⚫️⚫️⚫️⚫️`);
             panel5();
         }, 1000);
       });
@@ -576,7 +578,7 @@ function panel1() {
   function panel5() {
     return new Promise(resolve => {
         setTimeout(() => {
-            client.channels.get(`512743678477991946`).setName(`⚫️🔵🔵🔵⚫️⚫️⚫️⚫️`);
+            client.channels.get(`524228769037287434`).setName(`⚫️🔵🔵🔵⚫️⚫️⚫️⚫️`);
             panel6();
         }, 1000);
       });
@@ -584,7 +586,7 @@ function panel1() {
   function panel6() {
     return new Promise(resolve => {
         setTimeout(() => {
-            client.channels.get(`512743678477991946`).setName(`⚫️⚫️🔵🔵🔵⚫️⚫️⚫️`);
+            client.channels.get(`524228769037287434`).setName(`⚫️⚫️🔵🔵🔵⚫️⚫️⚫️`);
             panel7();
         }, 1000);
       });
@@ -592,7 +594,7 @@ function panel1() {
   function panel7() {
     return new Promise(resolve => {
         setTimeout(() => {
-            client.channels.get(`512743678477991946`).setName(`⚫️⚫️⚫️🔵🔵🔵⚫️⚫️`);
+            client.channels.get(`524228769037287434`).setName(`⚫️⚫️⚫️🔵🔵🔵⚫️⚫️`);
             panel8();
         }, 1000);
       });
@@ -600,7 +602,7 @@ function panel1() {
   function panel8() {
     return new Promise(resolve => {
         setTimeout(() => {
-            client.channels.get(`512743678477991946`).setName(`⚫️⚫️⚫️⚫️🔵🔵🔵⚫️`);
+            client.channels.get(`524228769037287434`).setName(`⚫️⚫️⚫️⚫️🔵🔵🔵⚫️`);
             panel9();
         }, 1000);
       });
@@ -608,7 +610,7 @@ function panel1() {
   function panel9() {
     return new Promise(resolve => {
         setTimeout(() => {
-            client.channels.get(`512743678477991946`).setName(`⚫️⚫️⚫️⚫️⚫️🔵🔵🔵`);
+            client.channels.get(`524228769037287434`).setName(`⚫️⚫️⚫️⚫️⚫️🔵🔵🔵`);
             panel10();
         }, 1000);
       });
@@ -616,7 +618,7 @@ function panel1() {
   function panel10() {
     return new Promise(resolve => {
         setTimeout(() => {
-            client.channels.get(`512743678477991946`).setName(`⚫️⚫️⚫️⚫️⚫️⚫️🔵🔵`);
+            client.channels.get(`524228769037287434`).setName(`⚫️⚫️⚫️⚫️⚫️⚫️🔵🔵`);
             panel11();
         }, 1000);
       });
@@ -624,7 +626,7 @@ function panel1() {
   function panel11() {
     return new Promise(resolve => {
         setTimeout(() => {
-            client.channels.get(`512743678477991946`).setName(`⚫️⚫️⚫️⚫️⚫️⚫️⚫️🔵`);
+            client.channels.get(`524228769037287434`).setName(`⚫️⚫️⚫️⚫️⚫️⚫️⚫️🔵`);
             panela();
         }, 1000);
       });
@@ -632,7 +634,7 @@ function panel1() {
 function panela() {
     return new Promise(resolve => {
         setTimeout(() => {
-            client.channels.get(`512743678477991946`).setName(`⚫️⚫️⚫️⚫️⚫️⚫️⚫️⚫️`);
+            client.channels.get(`524228769037287434`).setName(`⚫️⚫️⚫️⚫️⚫️⚫️⚫️⚫️`);
             panel12();
         }, 1000);
       });
@@ -640,7 +642,7 @@ function panela() {
 function panel12() {
     return new Promise(resolve => {
         setTimeout(() => {
-            client.channels.get(`512743678477991946`).setName(`⚫️⚫️⚫️🔵🔵⚫️⚫️⚫️`);
+            client.channels.get(`524228769037287434`).setName(`⚫️⚫️⚫️🔵🔵⚫️⚫️⚫️`);
             panel14();
         }, 1000);
       });
@@ -648,7 +650,7 @@ function panel12() {
 function panel14() {
     return new Promise(resolve => {
         setTimeout(() => {
-            client.channels.get(`512743678477991946`).setName(`⚫️⚫️🔵🔵🔵🔵⚫️⚫️`);
+            client.channels.get(`524228769037287434`).setName(`⚫️⚫️🔵🔵🔵🔵⚫️⚫️`);
             panel15();
         }, 1000);
       });
@@ -656,7 +658,7 @@ function panel14() {
 function panel15() {
     return new Promise(resolve => {
         setTimeout(() => {
-            client.channels.get(`512743678477991946`).setName(`🔵🔵🔵🔵🔵🔵🔵🔵`);
+            client.channels.get(`524228769037287434`).setName(`🔵🔵🔵🔵🔵🔵🔵🔵`);
             panel16();
         }, 1000);
       });
@@ -664,7 +666,7 @@ function panel15() {
 function panel16() {
     return new Promise(resolve => {
         setTimeout(() => {
-            client.channels.get(`512743678477991946`).setName(`🔵🔵🔵⚫️⚫️🔵🔵🔵`);
+            client.channels.get(`524228769037287434`).setName(`🔵🔵🔵⚫️⚫️🔵🔵🔵`);
             panel17();
         }, 1000);
       });
@@ -672,7 +674,7 @@ function panel16() {
 function panel17() {
     return new Promise(resolve => {
         setTimeout(() => {
-            client.channels.get(`512743678477991946`).setName(`🔵🔵⚫️⚫️⚫️⚫️🔵🔵`);
+            client.channels.get(`524228769037287434`).setName(`🔵🔵⚫️⚫️⚫️⚫️🔵🔵`);
             panel18();
         }, 1000);
       });
@@ -680,7 +682,7 @@ function panel17() {
 function panel18() {
     return new Promise(resolve => {
         setTimeout(() => {
-            client.channels.get(`512743678477991946`).setName(`🔵⚫️⚫️⚫️⚫️⚫️⚫️🔵`);
+            client.channels.get(`524228769037287434`).setName(`🔵⚫️⚫️⚫️⚫️⚫️⚫️🔵`);
             panel1();
         }, 1000);
       });
@@ -698,7 +700,7 @@ function panel18() {
 function bpanel1() {
     return new Promise(resolve => {
         setTimeout(() => {
-            client.channels.get(`512743861051981845`).setName(`⚫️⚫️⚫️⚫️⚫️⚫️⚫️⚫️`);
+            client.channels.get(`524228859776991253`).setName(`⚫️⚫️⚫️⚫️⚫️⚫️⚫️⚫️`);
             bpanel2();
         }, 1000);
       });
@@ -707,7 +709,7 @@ function bpanel1() {
   function bpanel2() {
     return new Promise(resolve => {
         setTimeout(() => {
-            client.channels.get(`512743861051981845`).setName(`🔵⚫️⚫️⚫️⚫️⚫️⚫️⚫️`);
+            client.channels.get(`524228859776991253`).setName(`🔵⚫️⚫️⚫️⚫️⚫️⚫️⚫️`);
             bpanel3();
         }, 1000);
       });
@@ -715,7 +717,7 @@ function bpanel1() {
   function bpanel3() {
     return new Promise(resolve => {
         setTimeout(() => {
-            client.channels.get(`512743861051981845`).setName(`🔵🔵⚫️⚫️⚫️⚫️⚫️⚫️`);
+            client.channels.get(`524228859776991253`).setName(`🔵🔵⚫️⚫️⚫️⚫️⚫️⚫️`);
             bpanel4();
         }, 1000);
       });
@@ -723,7 +725,7 @@ function bpanel1() {
   function bpanel4() {
     return new Promise(resolve => {
         setTimeout(() => {
-            client.channels.get(`512743861051981845`).setName(`🔵🔵🔵⚫️⚫️⚫️⚫️⚫️`);
+            client.channels.get(`524228859776991253`).setName(`🔵🔵🔵⚫️⚫️⚫️⚫️⚫️`);
             bpanel5();
         }, 1000);
       });
@@ -731,7 +733,7 @@ function bpanel1() {
   function bpanel5() {
     return new Promise(resolve => {
         setTimeout(() => {
-            client.channels.get(`512743861051981845`).setName(`⚫️🔵🔵🔵⚫️⚫️⚫️⚫️`);
+            client.channels.get(`524228859776991253`).setName(`⚫️🔵🔵🔵⚫️⚫️⚫️⚫️`);
             bpanel6();
         }, 1000);
       });
@@ -739,7 +741,7 @@ function bpanel1() {
   function bpanel6() {
     return new Promise(resolve => {
         setTimeout(() => {
-            client.channels.get(`512743861051981845`).setName(`⚫️⚫️🔵🔵🔵⚫️⚫️⚫️`);
+            client.channels.get(`524228859776991253`).setName(`⚫️⚫️🔵🔵🔵⚫️⚫️⚫️`);
             bpanel7();
         }, 1000);
       });
@@ -747,7 +749,7 @@ function bpanel1() {
   function bpanel7() {
     return new Promise(resolve => {
         setTimeout(() => {
-            client.channels.get(`512743861051981845`).setName(`⚫️⚫️⚫️🔵🔵🔵⚫️⚫️`);
+            client.channels.get(`524228859776991253`).setName(`⚫️⚫️⚫️🔵🔵🔵⚫️⚫️`);
             bpanel8();
         }, 1000);
       });
@@ -755,7 +757,7 @@ function bpanel1() {
   function bpanel8() {
     return new Promise(resolve => {
         setTimeout(() => {
-            client.channels.get(`512743861051981845`).setName(`⚫️⚫️⚫️⚫️🔵🔵🔵⚫️`);
+            client.channels.get(`524228859776991253`).setName(`⚫️⚫️⚫️⚫️🔵🔵🔵⚫️`);
             bpanel9();
         }, 1000);
       });
@@ -763,7 +765,7 @@ function bpanel1() {
   function bpanel9() {
     return new Promise(resolve => {
         setTimeout(() => {
-            client.channels.get(`512743861051981845`).setName(`⚫️⚫️⚫️⚫️⚫️🔵🔵🔵`);
+            client.channels.get(`524228859776991253`).setName(`⚫️⚫️⚫️⚫️⚫️🔵🔵🔵`);
             bpanel10();
         }, 1000);
       });
@@ -771,7 +773,7 @@ function bpanel1() {
   function bpanel10() {
     return new Promise(resolve => {
         setTimeout(() => {
-            client.channels.get(`512743861051981845`).setName(`⚫️⚫️⚫️⚫️⚫️⚫️🔵🔵`);
+            client.channels.get(`524228859776991253`).setName(`⚫️⚫️⚫️⚫️⚫️⚫️🔵🔵`);
             bpanel11();
         }, 1000);
       });
@@ -779,7 +781,7 @@ function bpanel1() {
   function bpanel11() {
     return new Promise(resolve => {
         setTimeout(() => {
-            client.channels.get(`512743861051981845`).setName(`⚫️⚫️⚫️⚫️⚫️⚫️⚫️🔵`);
+            client.channels.get(`524228859776991253`).setName(`⚫️⚫️⚫️⚫️⚫️⚫️⚫️🔵`);
             bpanela();
         }, 1000);
       });
@@ -787,7 +789,7 @@ function bpanel1() {
 function bpanela() {
     return new Promise(resolve => {
         setTimeout(() => {
-            client.channels.get(`512743861051981845`).setName(`⚫️⚫️⚫️⚫️⚫️⚫️⚫️⚫️`);
+            client.channels.get(`524228859776991253`).setName(`⚫️⚫️⚫️⚫️⚫️⚫️⚫️⚫️`);
             bpanel12();
         }, 1000);
       });
@@ -795,7 +797,7 @@ function bpanela() {
 function bpanel12() {
     return new Promise(resolve => {
         setTimeout(() => {
-            client.channels.get(`512743861051981845`).setName(`⚫️⚫️⚫️🔵🔵⚫️⚫️⚫️`);
+            client.channels.get(`524228859776991253`).setName(`⚫️⚫️⚫️🔵🔵⚫️⚫️⚫️`);
             bpanel14();
         }, 1000);
       });
@@ -803,7 +805,7 @@ function bpanel12() {
 function bpanel14() {
     return new Promise(resolve => {
         setTimeout(() => {
-            client.channels.get(`512743861051981845`).setName(`⚫️⚫️🔵🔵🔵🔵⚫️⚫️`);
+            client.channels.get(`524228859776991253`).setName(`⚫️⚫️🔵🔵🔵🔵⚫️⚫️`);
             bpanel15();
         }, 1000);
       });
@@ -811,7 +813,7 @@ function bpanel14() {
 function bpanel15() {
     return new Promise(resolve => {
         setTimeout(() => {
-            client.channels.get(`512743861051981845`).setName(`🔵🔵🔵🔵🔵🔵🔵🔵`);
+            client.channels.get(`524228859776991253`).setName(`🔵🔵🔵🔵🔵🔵🔵🔵`);
             bpanel16();
         }, 1000);
       });
@@ -819,7 +821,7 @@ function bpanel15() {
 function bpanel16() {
     return new Promise(resolve => {
         setTimeout(() => {
-            client.channels.get(`512743861051981845`).setName(`🔵🔵🔵⚫️⚫️🔵🔵🔵`);
+            client.channels.get(`524228859776991253`).setName(`🔵🔵🔵⚫️⚫️🔵🔵🔵`);
             bpanel17();
         }, 1000);
       });
@@ -827,7 +829,7 @@ function bpanel16() {
 function bpanel17() {
     return new Promise(resolve => {
         setTimeout(() => {
-            client.channels.get(`512743861051981845`).setName(`🔵🔵⚫️⚫️⚫️⚫️🔵🔵`);
+            client.channels.get(`524228859776991253`).setName(`🔵🔵⚫️⚫️⚫️⚫️🔵🔵`);
             bpanel18();
         }, 1000);
       });
@@ -835,7 +837,7 @@ function bpanel17() {
 function bpanel18() {
     return new Promise(resolve => {
         setTimeout(() => {
-            client.channels.get(`512743861051981845`).setName(`🔵⚫️⚫️⚫️⚫️⚫️⚫️🔵`);
+            client.channels.get(`524228859776991253`).setName(`🔵⚫️⚫️⚫️⚫️⚫️⚫️🔵`);
             bpanel1();
         }, 1000);
       });
@@ -853,7 +855,7 @@ function bpanel18() {
 function cpanel1() {
     return new Promise(resolve => {
         setTimeout(() => {
-            client.channels.get(`512739499466424352`).setName(`KEYİFLİ SOHBETLER`);
+            client.channels.get(`524228798351147008`).setName(`KEYİFLİ SOHBETLER`);
             cpanel2();
         }, 10000);
       });
@@ -862,7 +864,7 @@ function cpanel1() {
   function cpanel2() {
     return new Promise(resolve => {
         setTimeout(() => {
-            client.channels.get(`512739499466424352`).setName(`DİLERİZ`);
+            client.channels.get(`524228798351147008`).setName(`DİLERİZ`);
             cpanel3();
         }, 10000);
       });
@@ -870,7 +872,7 @@ function cpanel1() {
   function cpanel3() {
     return new Promise(resolve => {
         setTimeout(() => {
-            client.channels.get(`512739499466424352`).setName(`KRAL BOT'U`);
+            client.channels.get(`524228798351147008`).setName(`KRAL BOT'U`);
             cpanel4();
         }, 10000);
       });
@@ -878,7 +880,7 @@ function cpanel1() {
   function cpanel4() {
     return new Promise(resolve => {
         setTimeout(() => {
-            client.channels.get(`512739499466424352`).setName(`EKLEMYİ UNUTMA!`);
+            client.channels.get(`524228798351147008`).setName(`EKLEMYİ UNUTMA!`);
             cpanel5();
         }, 10000);
       });
@@ -886,7 +888,7 @@ function cpanel1() {
   function cpanel5() {
     return new Promise(resolve => {
         setTimeout(() => {
-            client.channels.get(`512739499466424352`).setName(`KRALBOT TEAM`);
+            client.channels.get(`524228798351147008`).setName(`KRALBOT TEAM`);
             cpanel6();
         }, 10000);
       });
@@ -894,7 +896,7 @@ function cpanel1() {
   function cpanel6() {
     return new Promise(resolve => {
         setTimeout(() => {
-            client.channels.get(`512739499466424352`).setName(`YETKİLİ = Süleyman Yıldız`);
+            client.channels.get(`524228798351147008`).setName(`YETKİLİ = Süleyman Yıldız`);
             cpanel7();
         }, 10000);
       });
@@ -902,7 +904,7 @@ function cpanel1() {
   function cpanel7() {
     return new Promise(resolve => {
         setTimeout(() => {
-            client.channels.get(`512739499466424352`).setName(`PREFİX [k?]`);
+            client.channels.get(`524228798351147008`).setName(`PREFİX [k?]`);
             cpanel8();
         }, 10000);
       });
@@ -910,7 +912,7 @@ function cpanel1() {
   function cpanel8() {
     return new Promise(resolve => {
         setTimeout(() => {
-            client.channels.get(`512739499466424352`).setName(`EĞLENCELİ SOHBETLER`);
+            client.channels.get(`524228798351147008`).setName(`EĞLENCELİ SOHBETLER`);
             cpanel9();
         }, 10000);
       });
@@ -918,7 +920,7 @@ function cpanel1() {
   function cpanel9() {
     return new Promise(resolve => {
         setTimeout(() => {
-            client.channels.get(`512739499466424352`).setName(`DİLERİZ`);
+            client.channels.get(`524228798351147008`).setName(`DİLERİZ`);
             cpanel10();
         }, 10000);
       });
@@ -926,7 +928,7 @@ function cpanel1() {
   function cpanel10() {
     return new Promise(resolve => {
         setTimeout(() => {
-            client.channels.get(`512739499466424352`).setName(`KRAL BOT`);
+            client.channels.get(`524228798351147008`).setName(`KRAL BOT`);
             cpanel11();
         }, 10000);
       });
@@ -934,7 +936,7 @@ function cpanel1() {
   function cpanel11() {
     return new Promise(resolve => {
         setTimeout(() => {
-            client.channels.get(`512739499466424352`).setName(`RESMİ SUNUCUSU`);
+            client.channels.get(`524228798351147008`).setName(`RESMİ SUNUCUSU`);
             cpanel1();
         }, 10000);
       });
@@ -946,7 +948,7 @@ function cpanel1() {
 function ipanel1() {
     return new Promise(resolve => {
         setTimeout(() => {
-            client.channels.get(`512740179568754718`).setName(`SUNUCU: ${client.guilds.size}`);
+            client.channels.get(`524228821969534997`).setName(`SUNUCU: ${client.guilds.size}`);
             ipanel2();
         }, 6000);
       });
@@ -955,7 +957,7 @@ function ipanel1() {
 function ipanel2() {
     return new Promise(resolve => {
         setTimeout(() => {
-            client.channels.get(`512740179568754718`).setName(`KULLANICI: ${client.users.size}`);
+            client.channels.get(`524228821969534997`).setName(`KULLANICI: ${client.users.size}`);
             ipanel1();
         }, 6000);
       });
