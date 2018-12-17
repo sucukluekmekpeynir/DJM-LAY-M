@@ -967,7 +967,7 @@ function ipanel2() {
 
 
 client.on("guildMemberAdd", member => {
-    let otorol = JSON.parse(fs.readFileSync("./ayarlar/otorol.json", "utf8"));
+    let otorol = JSON.parse(fs.readFileSync("./otorol.json", "utf8"));
     if (!otorol[member.guild.id]) return;
     var role = otorol[member.guild.id].role;
     if (!role) return;
