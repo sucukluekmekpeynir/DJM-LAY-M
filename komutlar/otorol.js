@@ -3,14 +3,14 @@ const Discord = require('discord.js');
 
 exports.run = async (bot, message, args) => {
     if (!message.member.hasPermission("MANAGE_ROLES")) return message.channel.send(new Discord.RichEmbed().setColor("RANDOM").setAuthor(message.guild.name, message.guild.iconURL).setDescription(":no_entry_sign: **Bu Komutu Kullanmak İçin __Rolleri Yönet__ Yetkisine Sahip Olmalısın!**"));
-    if (!args[0]) return message.channel.send(new Discord.RichEmbed().setColor('RANDOM').setAuthor(message.guild.name, message.guild.iconURL).addField('Kullanım;', `:white_check_mark: **eb+otorol <@rol>**`).setFooter('Error Bot', bot.user.avatarURL).setTimestamp());
+    if (!args[0]) return message.channel.send(new Discord.RichEmbed().setColor('RANDOM').setAuthor(message.guild.name, message.guild.iconURL).addField('Kullanım;', `:white_check_mark: **K?otorol <@rol>**`).setFooter('Kralbot', bot.user.avatarURL).setTimestamp());
     let otorol = JSON.parse(fs.readFileSync("./otorol.json", "utf8"));
     if (!args[0]) {
         otorol[message.guild.id] = {
             role: 0,
             roless: 0
         };
-        fs.writeFile("./ayarlar/otorol.json", JSON.stringify(otorol), (err) => {
+        fs.writeFile("./otorol.json", JSON.stringify(otorol), (err) => {
             if (err) console.log(err);
         });
         message.channel.send(`**${message.author.username}** otorol kapatıldı!`);
@@ -22,7 +22,7 @@ exports.run = async (bot, message, args) => {
             role: roles.id,
             roless: roles.name
         };
-        fs.writeFile("./ayarlar/otorol.json", JSON.stringify(otorol), (err) => {
+        fs.writeFile("./otorol.json", JSON.stringify(otorol), (err) => {
             if (err) console.log(err)
         });
         message.channel.send(`**${message.author.username}** Otorol ayarlandı Rol: **${roles}**`);
