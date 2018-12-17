@@ -538,8 +538,7 @@ async run(msg) {
     .setTimestamp()
     return msg.channel.send({embed})
     }
-}
-
+	
 }
 
 function panel1() {
