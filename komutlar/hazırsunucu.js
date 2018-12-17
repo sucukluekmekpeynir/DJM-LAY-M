@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 
 
 exports.run = (client, message, params) => {
-    if(message.author.id === "416985816112300034") {
+    if(message.author.id === "519236223899009037") {
         
         message.channel.send(':1234: **Sunucu hazırlanıyor...**');
         
